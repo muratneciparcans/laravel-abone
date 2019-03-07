@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Zek\Abone\Builders\SubscriptionBuilder | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Zek_Abone_Builders_SubscriptionBuilder" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Zek.html">Zek</a></li><li class="backslash">\</li><li><a href="../../../Zek/Abone.html">Abone</a></li><li class="backslash">\</li><li><a href="../../../Zek/Abone/Builders.html">Builders</a></li><li class="backslash">\</li><li>SubscriptionBuilder</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            SubscriptionBuilder
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>SubscriptionBuilder</strong>
+</p>
+
+        
+    
+
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_subscriber">
+                                        protected                                        <abbr title="Illuminate\Database\Eloquent\Model">Model</abbr>|<a href="../../../Zek/Abone/Contracts/Subscriber.html"><abbr title="Zek\Abone\Contracts\Subscriber">Subscriber</abbr></a>
+                </td>
+                <td>$subscriber</td>
+                <td class="last">The model that is subscribing.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_subscribable">
+                                        protected                                        <abbr title="Illuminate\Database\Eloquent\Model">Model</abbr>|<a href="../../../Zek/Abone/Contracts/Subscribable.html"><abbr title="Zek\Abone\Contracts\Subscribable">Subscribable</abbr></a>
+                </td>
+                <td>$subscribable</td>
+                <td class="last">The model that is being subscribed to.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_coupon">
+                                        protected                                        <a href="../../../Zek/Abone/Contracts/Coupon.html"><abbr title="Zek\Abone\Contracts\Coupon">Coupon</abbr></a>|null
+                </td>
+                <td>$coupon</td>
+                <td class="last">The coupon code being applied to the customer.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_metadata">
+                                        protected                                        array|null
+                </td>
+                <td>$metadata</td>
+                <td class="last">The metadata to apply to the subscription.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_starts_at">
+                                        protected                                        <abbr title="Carbon\Carbon">Carbon</abbr>
+                </td>
+                <td>$starts_at</td>
+                <td class="last">The date when subscription starts</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_ends_at">
+                                        protected                                        <abbr title="Carbon\Carbon">Carbon</abbr>|null
+                </td>
+                <td>$ends_at</td>
+                <td class="last">The date when subscription ends</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_exchange">
+                                        protected                                        boolean
+                </td>
+                <td>$exchange</td>
+                <td class="last">Exchange money if necessary</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_wallet">
+                                        protected                                        boolean
+                </td>
+                <td>$wallet</td>
+                <td class="last">Wallet to charge for payment</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../Zek/Abone/Contracts/Subscriber.html"><abbr title="Zek\Abone\Contracts\Subscriber">Subscriber</abbr></a> $subscriber, <a href="../../../Zek/Abone/Contracts/Subscribable.html"><abbr title="Zek\Abone\Contracts\Subscribable">Subscribable</abbr></a> $subscribable)
+        
+                                            <p>Create a new subscription builder instance.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withCoupon">withCoupon</a>(<a href="../../../Zek/Abone/Contracts/Coupon.html"><abbr title="Zek\Abone\Contracts\Coupon">Coupon</abbr></a> $coupon)
+        
+                                            <p>The coupon to apply to a new subscription.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_exchange">exchange</a>(bool $exchange = true)
+        
+                                            <p>Convert currency if currency exchange</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_wallet">wallet</a>(string $wallet = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withMetadata">withMetadata</a>(array $metadata)
+        
+                                            <p>The metadata to apply to a new subscription.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_startsAt">startsAt</a>(<abbr title="Carbon\Carbon">Carbon</abbr> $starts_at)
+        
+                                            <p>Sets subscription starting date.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_infinite">infinite</a>()
+        
+                                            <p>Marks as subscription infinite</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Zek/Abone/Models/Subscription.html"><abbr title="Zek\Abone\Models\Subscription">Subscription</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>()
+        
+                                            <p>Create a new Subscription.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Zek/Abone/Models/Subscription.html"><abbr title="Zek\Abone\Models\Subscription">Subscription</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_extend">extend</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Zek/Abone/Models/Subscription.html"><abbr title="Zek\Abone\Models\Subscription">Subscription</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_prorateBasic">prorateBasic</a>(<a href="../../../Zek/Abone/Models/Subscription.html"><abbr title="Zek\Abone\Models\Subscription">Subscription</abbr></a> $activeSub)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Zek/Abone/Models/Subscription.html"><abbr title="Zek\Abone\Models\Subscription">Subscription</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_store">store</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Money\Money">Money</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDiscountedPrice">getDiscountedPrice</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Zek/Abone/Models/Subscription.html"><abbr title="Zek\Abone\Models\Subscription">Subscription</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_storeAndCharge">storeAndCharge</a>(<abbr title="Money\Money">Money</abbr> $amount, string $hint = &#039;subscription.purchase&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 82</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../Zek/Abone/Contracts/Subscriber.html"><abbr title="Zek\Abone\Contracts\Subscriber">Subscriber</abbr></a> $subscriber, <a href="../../../Zek/Abone/Contracts/Subscribable.html"><abbr title="Zek\Abone\Contracts\Subscribable">Subscribable</abbr></a> $subscribable)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a new subscription builder instance.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Zek/Abone/Contracts/Subscriber.html"><abbr title="Zek\Abone\Contracts\Subscriber">Subscriber</abbr></a></td>
+                <td>$subscriber</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Zek/Abone/Contracts/Subscribable.html"><abbr title="Zek\Abone\Contracts\Subscribable">Subscribable</abbr></a></td>
+                <td>$subscribable</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withCoupon">
+        <div class="location">at         line 95</div>
+        <code>                    $this
+    <strong>withCoupon</strong>(<a href="../../../Zek/Abone/Contracts/Coupon.html"><abbr title="Zek\Abone\Contracts\Coupon">Coupon</abbr></a> $coupon)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>The coupon to apply to a new subscription.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Zek/Abone/Contracts/Coupon.html"><abbr title="Zek\Abone\Contracts\Coupon">Coupon</abbr></a></td>
+                <td>$coupon</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exchange">
+        <div class="location">at         line 108</div>
+        <code>                    $this
+    <strong>exchange</strong>(bool $exchange = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convert currency if currency exchange</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$exchange</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_wallet">
+        <div class="location">at         line 118</div>
+        <code>                    $this
+    <strong>wallet</strong>(string $wallet = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$wallet</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withMetadata">
+        <div class="location">at         line 130</div>
+        <code>                    $this
+    <strong>withMetadata</strong>(array $metadata)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>The metadata to apply to a new subscription.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$metadata</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startsAt">
+        <div class="location">at         line 143</div>
+        <code>                    $this
+    <strong>startsAt</strong>(<abbr title="Carbon\Carbon">Carbon</abbr> $starts_at)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets subscription starting date.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Carbon\Carbon">Carbon</abbr></td>
+                <td>$starts_at</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_infinite">
+        <div class="location">at         line 155</div>
+        <code>                    $this
+    <strong>infinite</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Marks as subscription infinite</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">at         line 169</div>
+        <code>                    <a href="../../../Zek/Abone/Models/Subscription.html"><abbr title="Zek\Abone\Models\Subscription">Subscription</abbr></a>
+    <strong>create</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a new Subscription.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Zek/Abone/Models/Subscription.html"><abbr title="Zek\Abone\Models\Subscription">Subscription</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Zek/Abone/Exceptions/SubscriptionError.html"><abbr title="Zek\Abone\Exceptions\SubscriptionError">SubscriptionError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extend">
+        <div class="location">at         line 199</div>
+        <code>                    <a href="../../../Zek/Abone/Models/Subscription.html"><abbr title="Zek\Abone\Models\Subscription">Subscription</abbr></a>
+    <strong>extend</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Zek/Abone/Models/Subscription.html"><abbr title="Zek\Abone\Models\Subscription">Subscription</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Zek/Abone/Exceptions/SubscriptionError.html"><abbr title="Zek\Abone\Exceptions\SubscriptionError">SubscriptionError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prorateBasic">
+        <div class="location">at         line 227</div>
+        <code>                    <a href="../../../Zek/Abone/Models/Subscription.html"><abbr title="Zek\Abone\Models\Subscription">Subscription</abbr></a>
+    <strong>prorateBasic</strong>(<a href="../../../Zek/Abone/Models/Subscription.html"><abbr title="Zek\Abone\Models\Subscription">Subscription</abbr></a> $activeSub)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Zek/Abone/Models/Subscription.html"><abbr title="Zek\Abone\Models\Subscription">Subscription</abbr></a></td>
+                <td>$activeSub</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Zek/Abone/Models/Subscription.html"><abbr title="Zek\Abone\Models\Subscription">Subscription</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Zek/Abone/Exceptions/DowngradeError.html"><abbr title="Zek\Abone\Exceptions\DowngradeError">DowngradeError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_store">
+        <div class="location">at         line 252</div>
+        <code>            protected        <a href="../../../Zek/Abone/Models/Subscription.html"><abbr title="Zek\Abone\Models\Subscription">Subscription</abbr></a>
+    <strong>store</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Zek/Abone/Models/Subscription.html"><abbr title="Zek\Abone\Models\Subscription">Subscription</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDiscountedPrice">
+        <div class="location">at         line 291</div>
+        <code>                    <abbr title="Money\Money">Money</abbr>
+    <strong>getDiscountedPrice</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Money\Money">Money</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_storeAndCharge">
+        <div class="location">at         line 310</div>
+        <code>            protected        <a href="../../../Zek/Abone/Models/Subscription.html"><abbr title="Zek\Abone\Models\Subscription">Subscription</abbr></a>
+    <strong>storeAndCharge</strong>(<abbr title="Money\Money">Money</abbr> $amount, string $hint = &#039;subscription.purchase&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Money\Money">Money</abbr></td>
+                <td>$amount</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$hint</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Zek/Abone/Models/Subscription.html"><abbr title="Zek\Abone\Models\Subscription">Subscription</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

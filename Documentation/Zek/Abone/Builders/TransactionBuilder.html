@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Zek\Abone\Builders\TransactionBuilder | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Zek_Abone_Builders_TransactionBuilder" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Zek.html">Zek</a></li><li class="backslash">\</li><li><a href="../../../Zek/Abone.html">Abone</a></li><li class="backslash">\</li><li><a href="../../../Zek/Abone/Builders.html">Builders</a></li><li class="backslash">\</li><li>TransactionBuilder</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            TransactionBuilder
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>TransactionBuilder</strong>
+</p>
+
+        
+    
+
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_amount">
+                                        protected                                        <abbr title="Money\Money">Money</abbr>
+                </td>
+                <td>$amount</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_confirmed">
+                                        protected                                        boolean
+                </td>
+                <td>$confirmed</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_reference">
+                                        protected                                        <abbr title="Illuminate\Database\Eloquent\Model">Model</abbr>|null
+                </td>
+                <td>$reference</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_exchange">
+                                        protected                                        boolean
+                </td>
+                <td>$exchange</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_at">
+                                        protected                                        <abbr title="Carbon\Carbon">Carbon</abbr>
+                </td>
+                <td>$at</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_owner">
+                                        protected                                        <a href="../../../Zek/Abone/Contracts/HasWallets.html"><abbr title="Zek\Abone\Contracts\HasWallets">HasWallets</abbr></a>
+                </td>
+                <td>$owner</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_wallet">
+                                        protected                                        string|null
+                </td>
+                <td>$wallet</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_walletInstance">
+                                        protected                                        <a href="../../../Zek/Abone/Models/Wallet.html"><abbr title="Zek\Abone\Models\Wallet">Wallet</abbr></a>
+                </td>
+                <td>$walletInstance</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_hint">
+                                        protected                                        string
+                </td>
+                <td>$hint</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_force">
+                                        protected                                        boolean
+                </td>
+                <td>$force</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../Zek/Abone/Contracts/HasWallets.html"><abbr title="Zek\Abone\Contracts\HasWallets">HasWallets</abbr></a> $owner, <abbr title="Money\Money">Money</abbr> $amount)
+        
+                                            <p>TransactionBuilder constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Zek/Abone/Builders/TransactionBuilder.html"><abbr title="Zek\Abone\Builders\TransactionBuilder">TransactionBuilder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_unconfirmed">unconfirmed</a>()
+        
+                                            <p>Sets transaction as unconfirmed.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Zek/Abone/Builders/TransactionBuilder.html"><abbr title="Zek\Abone\Builders\TransactionBuilder">TransactionBuilder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hint">hint</a>(string $hint)
+        
+                                            <p>Sets a hint fon the transaction.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Zek/Abone/Builders/TransactionBuilder.html"><abbr title="Zek\Abone\Builders\TransactionBuilder">TransactionBuilder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_references">references</a>(<abbr title="Illuminate\Database\Eloquent\Model">Model</abbr>|null $reference)
+        
+                                            <p>Sets transaction reference.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Zek/Abone/Builders/TransactionBuilder.html"><abbr title="Zek\Abone\Builders\TransactionBuilder">TransactionBuilder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_at">at</a>(<abbr title="Carbon\Carbon">Carbon</abbr> $at)
+        
+                                            <p>Sets transaction date.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Zek/Abone/Builders/TransactionBuilder.html"><abbr title="Zek\Abone\Builders\TransactionBuilder">TransactionBuilder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_force">force</a>(bool $force = true)
+        
+                                            <p>Disable checking if balance is negative after transaction.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Zek/Abone/Builders/TransactionBuilder.html"><abbr title="Zek\Abone\Builders\TransactionBuilder">TransactionBuilder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_wallet">wallet</a>(string $wallet = null)
+        
+                                            <p>Sets wallet by name.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Zek/Abone/Models/Transaction.html"><abbr title="Zek\Abone\Models\Transaction">Transaction</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_charge">charge</a>(array $meta = [])
+        
+                                            <p>Creates a money out transaction.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Zek/Abone/Models/Transaction.html"><abbr title="Zek\Abone\Models\Transaction">Transaction</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_credit">credit</a>(array $meta = [])
+        
+                                            <p>Creates a money entry transaction.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Zek/Abone/Models/Transaction.html"><abbr title="Zek\Abone\Models\Transaction">Transaction</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_transfer">transfer</a>(<a href="../../../Zek/Abone/Models/Wallet.html"><abbr title="Zek\Abone\Models\Wallet">Wallet</abbr></a> $targetWallet, array $meta = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Zek/Abone/Models/Transaction.html"><abbr title="Zek\Abone\Models\Transaction">Transaction</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_store">store</a>(string $type, array $meta = [])
+        
+                                            <p>Stores transaction in database.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_exchange">exchange</a>(bool $exchange = true)
+        
+                                            <p>Convert currency if currency exchange.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Money\Money">Money</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_exchangedAmount">exchangedAmount</a>(<abbr title="Money\Money">Money</abbr> $amount)
+        
+                                            <p>Returns exchanged Money object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Zek/Abone/Models/Wallet.html"><abbr title="Zek\Abone\Models\Wallet">Wallet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getWallet">getWallet</a>()
+        
+                                            <p>Returns wallet instance.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 76</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../Zek/Abone/Contracts/HasWallets.html"><abbr title="Zek\Abone\Contracts\HasWallets">HasWallets</abbr></a> $owner, <abbr title="Money\Money">Money</abbr> $amount)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>TransactionBuilder constructor.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Zek/Abone/Contracts/HasWallets.html"><abbr title="Zek\Abone\Contracts\HasWallets">HasWallets</abbr></a></td>
+                <td>$owner</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Money\Money">Money</abbr></td>
+                <td>$amount</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Zek/Abone/Exceptions/InvalidAmount.html"><abbr title="Zek\Abone\Exceptions\InvalidAmount">InvalidAmount</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unconfirmed">
+        <div class="location">at         line 91</div>
+        <code>                    <a href="../../../Zek/Abone/Builders/TransactionBuilder.html"><abbr title="Zek\Abone\Builders\TransactionBuilder">TransactionBuilder</abbr></a>
+    <strong>unconfirmed</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets transaction as unconfirmed.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Zek/Abone/Builders/TransactionBuilder.html"><abbr title="Zek\Abone\Builders\TransactionBuilder">TransactionBuilder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hint">
+        <div class="location">at         line 103</div>
+        <code>                    <a href="../../../Zek/Abone/Builders/TransactionBuilder.html"><abbr title="Zek\Abone\Builders\TransactionBuilder">TransactionBuilder</abbr></a>
+    <strong>hint</strong>(string $hint)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets a hint fon the transaction.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$hint</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Zek/Abone/Builders/TransactionBuilder.html"><abbr title="Zek\Abone\Builders\TransactionBuilder">TransactionBuilder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_references">
+        <div class="location">at         line 115</div>
+        <code>                    <a href="../../../Zek/Abone/Builders/TransactionBuilder.html"><abbr title="Zek\Abone\Builders\TransactionBuilder">TransactionBuilder</abbr></a>
+    <strong>references</strong>(<abbr title="Illuminate\Database\Eloquent\Model">Model</abbr>|null $reference)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets transaction reference.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Database\Eloquent\Model">Model</abbr>|null</td>
+                <td>$reference</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Zek/Abone/Builders/TransactionBuilder.html"><abbr title="Zek\Abone\Builders\TransactionBuilder">TransactionBuilder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_at">
+        <div class="location">at         line 127</div>
+        <code>                    <a href="../../../Zek/Abone/Builders/TransactionBuilder.html"><abbr title="Zek\Abone\Builders\TransactionBuilder">TransactionBuilder</abbr></a>
+    <strong>at</strong>(<abbr title="Carbon\Carbon">Carbon</abbr> $at)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets transaction date.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Carbon\Carbon">Carbon</abbr></td>
+                <td>$at</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Zek/Abone/Builders/TransactionBuilder.html"><abbr title="Zek\Abone\Builders\TransactionBuilder">TransactionBuilder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_force">
+        <div class="location">at         line 139</div>
+        <code>                    <a href="../../../Zek/Abone/Builders/TransactionBuilder.html"><abbr title="Zek\Abone\Builders\TransactionBuilder">TransactionBuilder</abbr></a>
+    <strong>force</strong>(bool $force = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Disable checking if balance is negative after transaction.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$force</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Zek/Abone/Builders/TransactionBuilder.html"><abbr title="Zek\Abone\Builders\TransactionBuilder">TransactionBuilder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_wallet">
+        <div class="location">at         line 151</div>
+        <code>                    <a href="../../../Zek/Abone/Builders/TransactionBuilder.html"><abbr title="Zek\Abone\Builders\TransactionBuilder">TransactionBuilder</abbr></a>
+    <strong>wallet</strong>(string $wallet = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets wallet by name.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$wallet</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Zek/Abone/Builders/TransactionBuilder.html"><abbr title="Zek\Abone\Builders\TransactionBuilder">TransactionBuilder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_charge">
+        <div class="location">at         line 163</div>
+        <code>                    <a href="../../../Zek/Abone/Models/Transaction.html"><abbr title="Zek\Abone\Models\Transaction">Transaction</abbr></a>
+    <strong>charge</strong>(array $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a money out transaction.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Zek/Abone/Models/Transaction.html"><abbr title="Zek\Abone\Models\Transaction">Transaction</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_credit">
+        <div class="location">at         line 174</div>
+        <code>                    <a href="../../../Zek/Abone/Models/Transaction.html"><abbr title="Zek\Abone\Models\Transaction">Transaction</abbr></a>
+    <strong>credit</strong>(array $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a money entry transaction.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Zek/Abone/Models/Transaction.html"><abbr title="Zek\Abone\Models\Transaction">Transaction</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_transfer">
+        <div class="location">at         line 184</div>
+        <code>                    <a href="../../../Zek/Abone/Models/Transaction.html"><abbr title="Zek\Abone\Models\Transaction">Transaction</abbr></a>
+    <strong>transfer</strong>(<a href="../../../Zek/Abone/Models/Wallet.html"><abbr title="Zek\Abone\Models\Wallet">Wallet</abbr></a> $targetWallet, array $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Zek/Abone/Models/Wallet.html"><abbr title="Zek\Abone\Models\Wallet">Wallet</abbr></a></td>
+                <td>$targetWallet</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Zek/Abone/Models/Transaction.html"><abbr title="Zek\Abone\Models\Transaction">Transaction</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_store">
+        <div class="location">at         line 222</div>
+        <code>            protected        <a href="../../../Zek/Abone/Models/Transaction.html"><abbr title="Zek\Abone\Models\Transaction">Transaction</abbr></a>
+    <strong>store</strong>(string $type, array $meta = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Stores transaction in database.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$meta</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Zek/Abone/Models/Transaction.html"><abbr title="Zek\Abone\Models\Transaction">Transaction</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exchange">
+        <div class="location">at         line 269</div>
+        <code>                    $this
+    <strong>exchange</strong>(bool $exchange = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convert currency if currency exchange.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$exchange</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exchangedAmount">
+        <div class="location">at         line 282</div>
+        <code>            protected        <abbr title="Money\Money">Money</abbr>
+    <strong>exchangedAmount</strong>(<abbr title="Money\Money">Money</abbr> $amount)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns exchanged Money object.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Money\Money">Money</abbr></td>
+                <td>$amount</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Money\Money">Money</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Zek/Abone/Exceptions/WalletError.html"><abbr title="Zek\Abone\Exceptions\WalletError">WalletError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getWallet">
+        <div class="location">at         line 302</div>
+        <code>            protected        <a href="../../../Zek/Abone/Models/Wallet.html"><abbr title="Zek\Abone\Models\Wallet">Wallet</abbr></a>
+    <strong>getWallet</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns wallet instance.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Zek/Abone/Models/Wallet.html"><abbr title="Zek\Abone\Models\Wallet">Wallet</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
